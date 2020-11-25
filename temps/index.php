@@ -5,7 +5,13 @@
 </head>
 <body>
       <form name="form1" method="POST" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
-
+<?php 
+/* Unix Timestamp */
+$timestamp = time();
+echo $timestamp . "<br>";
+echo date("d/m/Y", $timestamp);
+?>
+            
 <table>
 <tr>
     <td>Enter the temperature to convert:</td>
